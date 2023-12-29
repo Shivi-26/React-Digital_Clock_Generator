@@ -9,7 +9,7 @@ export default function Timer(){
     
     let interval=useRef();
     const startTimer=()=> {
-        const countdownDate = new Date("26 July 2024 12:00 AM").getTime();  //method is Date.getTime(),countdownDate 
+        const countdownDate = new Date("19 Oct 2024 12:00 AM").getTime();  //method is Date.getTime(),countdownDate 
         //is initial value
         interval=setInterval(() =>{
            const end=new Date(countdownDate);
@@ -40,7 +40,7 @@ export default function Timer(){
     return(
         <div className='title'>
             <h1>My Digital Clock⏰</h1>
-            <h3 className='header'>Just Waiting for that special day🎂 26 July 2024 12:00 AM</h3>
+            <h3 className='header'>Just Waiting for that special day🎂 19 Oct 2024 12:00 AM</h3>
             <div className='main'>
                <div>
                    <input type="text" readOnly value={setDay} />
